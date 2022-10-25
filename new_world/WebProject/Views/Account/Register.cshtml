@@ -1,0 +1,24 @@
+﻿@model WebProject.Models.ViewModels.RegisterViewModel
+
+<div class="container">
+    <h2>Registration</h2>
+    <form method="post">
+        <div asp-validation-summary="All"></div>
+        <div class="form-group">
+            <label class="col-form-label mt-4" asp-for="Email">Email</label>
+            <input asp-for="Email" type="text" class="form-control" placeholder="Enter your Email" id="inputDefault">
+            <span class="text-danger" asp-validation-for="Email"></span>
+        </div>
+        <div class="form-group">
+            <label class="col-form-label mt-4" asp-for="Password">Password</label>
+            <input asp-for="Password" type="text" class="form-control" placeholder="Enter your Password" id="inputDefault">
+            <span class="text-danger" asp-validation-for="Password"></span>
+        </div>
+        <div class="form-group">
+            <label class="col-form-label mt-4" asp-for="PasswordConfirm">Password confirm </label>
+            <input asp-for="PasswordConfirm" type="text" class="form-control" placeholder="Confirm your Password" id="inputDefault">
+            <span class="text-danger" asp-validation-for="PasswordConfirm"></span>
+        </div>
+        <input type="submit" value="Submit" class="btn btn-primary mt-3"></input>
+    </form>
+</div>
