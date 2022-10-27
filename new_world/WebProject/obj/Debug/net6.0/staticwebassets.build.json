@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "xSYku+FdOU4y9Omw9xX/4wJ864kAJBVLu5T7w61VA/w=",
+  "Hash": "UCk1sXTs7ofBGy66iJQ7ssvw9Z1eDPLAqUTT5fNGooQ=",
   "Source": "WebProject",
   "BasePath": "_content/WebProject",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "D:\\Web_projects\\new_world\\new_world\\WebProject\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\WebProject.bundle.scp.css"
+    },
+    {
+      "Identity": "D:\\Web_projects\\new_world\\new_world\\WebProject\\wwwroot\\css\\hexagons.css",
+      "SourceId": "WebProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Web_projects\\new_world\\new_world\\WebProject\\wwwroot\\",
+      "BasePath": "_content/WebProject",
+      "RelativePath": "css/hexagons.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\hexagons.css"
     },
     {
       "Identity": "D:\\Web_projects\\new_world\\new_world\\WebProject\\wwwroot\\css\\site.css",

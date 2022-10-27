@@ -1,0 +1,37 @@
+﻿@{
+    ViewData["Title"] = "Land Page";
+    ViewData["Selected_page"] = "Land";
+}
+
+@if (User.Identity.IsAuthenticated)
+{
+    <p>@User.Identity.Name</p>
+}
+
+@for (int i = 0; i < 7; i++)
+{
+    <div class="hex-row">
+        @for (int j = 0; j < 23; j++)
+        {
+        
+                <div class="hex">
+                    <div class="top"></div>
+                    <div class="middle"></div>
+                    <div class="bottom"></div>
+                </div>
+        
+        }
+    </div>
+    <div class="hex-row even">
+        @for (int j = 0; j < 23; j++)
+        {
+
+            <div class="hex">
+                <div class="top"></div>
+                <div class="middle"></div>
+                <div class="bottom"></div>
+            </div>
+
+        }
+    </div>
+}

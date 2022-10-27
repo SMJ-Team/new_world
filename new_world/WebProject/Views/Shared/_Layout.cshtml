@@ -6,6 +6,7 @@
     <title>@ViewData["Title"] - WebProject</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/downloaded/bootstrap.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/hexagons.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/WebProject.styles.css" asp-append-version="true" />
 </head>
 <body>
@@ -20,14 +21,19 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarColor03">
+                    
                     <ul class="navbar-nav me-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            <a class="nav-link @if(ViewData["Selected_page"] == "Index"){<text>active</text>}" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                             <span class="visually-hidden">(current)</span>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                            <a class="nav-link @if(ViewData["Selected_page"] == "Land"){<text>active</text>}" asp-area="" asp-controller="Home" asp-action="Land">Land</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link @if(ViewData["Selected_page"] == "Shop"){<text>active</text>}" asp-area="" asp-controller="" asp-action="">Shop</a>
+                        </li>
+                        
                     </ul>
                     <div class="d-flex">
                         @if (User.Identity.IsAuthenticated)
