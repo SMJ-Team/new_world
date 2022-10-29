@@ -14,10 +14,9 @@ builder.Services.AddDbContext<AuthDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("AuthConnectionString")));
 builder.Services.AddIdentity<IdentityUser, IdentityRole>(options =>
 {
-    options.SignIn.RequireConfirmedAccount = true;
-}).AddEntityFrameworkStores<AuthDbContext>();
-
-//builder.Services.AddIdentity<IdentityUser, IdentityRole>().AddEntityFrameworkStores<AuthDbContext>();
+    options.SignIn.RequireConfirmedEmail = true;
+}).AddEntityFrameworkStores<AuthDbContext>()
+.AddDefaultTokenProviders();
 
 builder.Services.AddAuthentication()
     .AddGoogle(googleOptions =>

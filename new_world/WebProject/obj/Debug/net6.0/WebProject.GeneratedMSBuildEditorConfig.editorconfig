@@ -27,6 +27,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Web_projects/new_world/new_world/WebProject/Views/Email/ConfirmEmail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1haWxcQ29uZmlybUVtYWlsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Web_projects/new_world/new_world/WebProject/Views/Email/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1haWxcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Web_projects/new_world/new_world/WebProject/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using System.Diagnostics.Contracts;
 using System.Security.Claims;
+using WebProject.Models;
 using WebProject.Models.ViewModels;
 
 namespace WebProject.Controllers
@@ -33,8 +34,13 @@ namespace WebProject.Controllers
                 var result = await _userManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
                 {
-                    await _signInManager.SignInAsync(user, false);
-                    return RedirectToAction("Index", "Home");
+                    var token = await _userManager.GenerateEmailConfirmationTokenAsync(user);
+                    var confirmationLink = Url.Action("ConfirmEmail", "Email", new { token, email = user.Email }, Request.Scheme);
+
+                    //EmailHelper emailHelper = new EmailHelper(); //Email sender
+                    //bool emailResponse = emailHelper.SendEmail(user.Email, confirmationLink); //Email send
+                    //await _signInManager.SignInAsync(user, false);  //Instant log in
+                    return base.Content("<a href=\"" + confirmationLink + "\">Confirm your address: " + confirmationLink + "</a>", "text/html");//Represents Email sender work
                 }
                 else
                 {
@@ -59,8 +65,8 @@ namespace WebProject.Controllers
         {
             if (ModelState.IsValid)
             {
-                var result = await _signInManager
-                    .PasswordSignInAsync(model.Email, model.Password, model.RememberMe, false);
+                await _signInManager.SignOutAsync();                
+                var result = await _signInManager.PasswordSignInAsync(model.Email, model.Password, model.RememberMe, false);
                 if (result.Succeeded)
                 {
                     if (!string.IsNullOrEmpty(model.ReturnUrl) && Url.IsLocalUrl(model.ReturnUrl))
@@ -74,7 +80,11 @@ namespace WebProject.Controllers
                 }
                 else
                 {
+                    IdentityUser user = await _userManager.FindByEmailAsync(model.Email);
+                    bool emailStatus = await _userManager.IsEmailConfirmedAsync(user);
 
+                    if (emailStatus == false)
+                        ModelState.AddModelError(nameof(model.Email), "Confirm your Email!");
                     ModelState.AddModelError("", "Wrong Email or password");
                 }
             }
@@ -106,7 +116,7 @@ namespace WebProject.Controllers
             if (info == null)
                 return RedirectToAction("Login", "Account");
 
-            var result = await _signInManager.ExternalLoginSignInAsync(info.LoginProvider, info.ProviderKey, false, false);
+            var result = await _signInManager.ExternalLoginSignInAsync(info.LoginProvider, info.ProviderKey, false);
             string[] userInfo = { info.Principal.FindFirst(ClaimTypes.Name).Value, info.Principal.FindFirst(ClaimTypes.Email).Value };
             if (result.Succeeded)
                 return View(userInfo); //you need to confirm the Email address, to get succeeded result
@@ -116,7 +126,8 @@ namespace WebProject.Controllers
                 IdentityUser user = new IdentityUser
                 {
                     Email = info.Principal.FindFirst(ClaimTypes.Email).Value,
-                    UserName = info.Principal.FindFirst(ClaimTypes.Email).Value
+                    UserName = info.Principal.FindFirst(ClaimTypes.Email).Value,
+                    EmailConfirmed = true                    
                 };
 
                 IdentityResult identResult = await _userManager.CreateAsync(user);
