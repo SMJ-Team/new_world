@@ -395,3 +395,4 @@ D:\Web_projects\new_world\new_world\WebProject\bin\Debug\net6.0\tr\Microsoft.Cod
 D:\Web_projects\new_world\new_world\WebProject\bin\Debug\net6.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
 D:\Web_projects\new_world\new_world\WebProject\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
 D:\Web_projects\new_world\new_world\WebProject\obj\Debug\net6.0\WebProject.MvcApplicationPartsAssemblyInfo.cs
+D:\Web_projects\new_world\new_world\WebProject\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.Google.dll

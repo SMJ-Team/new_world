@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "9OKcrrfxOT/o2QokOPnZ8LZYea9tpRay1gYyIRvvgi+UfYISlpQHlYTDZaCMPo+UlMetAx5nPMZ33TKO0Ih9rA==",
+  "dgSpecHash": "PRbcgtBah/Ne4+/UH2HQW8ozvbaU5jNr+T4FfyYb1ARFvCBpfgIE6eNqjLePf8ZFzy6RA0IkQ8rHzNgo4SOrjA==",
   "success": true,
   "projectFilePath": "D:\\Web_projects\\new_world\\new_world\\WebProject\\WebProject.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.authentication.google\\6.0.10\\microsoft.aspnetcore.authentication.google.6.0.10.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\6.0.10\\microsoft.aspnetcore.cryptography.internal.6.0.10.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\6.0.10\\microsoft.aspnetcore.cryptography.keyderivation.6.0.10.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
