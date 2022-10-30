@@ -1,6 +1,8 @@
-﻿@{
+﻿@model IEnumerable<Land>
+@{
     ViewData["Title"] = "Land Page";
     ViewData["Selected_page"] = "Land";
+    int count = 1;
 }
 
 @if (User.Identity.IsAuthenticated)
@@ -10,28 +12,33 @@
 
 @for (int i = 0; i < 7; i++)
 {
+    
     <div class="hex-row">
         @for (int j = 0; j < 23; j++)
         {
-        
-                <div class="hex">
+            <div class="hex">
+                <a href="#" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="top" data-placement="top" title="Popover Header"
+                 data-bs-content="X = @Model.FirstOrDefault(x => x.Id == count).X, Y = @Model.FirstOrDefault(x => x.Id == count).Y">
                     <div class="top"></div>
                     <div class="middle"></div>
                     <div class="bottom"></div>
-                </div>
-        
+                </a>
+            </div>
+            count++;
         }
     </div>
     <div class="hex-row even">
         @for (int j = 0; j < 23; j++)
         {
-
             <div class="hex">
-                <div class="top"></div>
-                <div class="middle"></div>
-                <div class="bottom"></div>
+                <a href="#" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="top" data-placement="top" title="Popover Header"
+                 data-bs-content="X = @Model.FirstOrDefault(x => x.Id == count).X, Y = @Model.FirstOrDefault(x => x.Id == count).Y">
+                    <div class="top"></div>
+                    <div class="middle"></div>
+                    <div class="bottom"></div>
+                </a>
             </div>
-
+            count++;
         }
     </div>
 }

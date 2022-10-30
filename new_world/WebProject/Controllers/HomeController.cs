@@ -7,10 +7,12 @@ namespace WebProject.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly AppDbContext _dbContext;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, AppDbContext dbContext)
         {
             _logger = logger;
+            _dbContext = dbContext;
         }
 
         public IActionResult Index()
@@ -25,7 +27,8 @@ namespace WebProject.Controllers
 
         public IActionResult Land()
         {
-            return View();
+            var lands =  _dbContext.lands.ToList();
+            return View(lands);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
