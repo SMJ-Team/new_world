@@ -10,35 +10,44 @@
     <p>@User.Identity.Name</p>
 }
 
-@for (int i = 0; i < 7; i++)
-{
+@for (int i = 0; i < 14; i++)
+{    
+        <div class="hex-row @(i % 2 == 0 ? "even" : "")"> <!-- //if "i" is even, adds "even" class-->            
+        
+        @for (int j = 0; j < 23; j++)
+            {
+                <div class="hexagon">
+
+                    <a href="#" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="top" data-placement="top" title="Popover Header"
+                    data-bs-content="
+                        X = @Model.ElementAt(count - 1).X, Y = @Model.ElementAt(count - 1).Y <br/> 
+                        @(Model.ElementAt(count - 1).IsOccupied == true ? "Occupied" : "Free") <br/>
+                        @(Model.ElementAt(count - 1).IsOccupied == false ? "<a href='#' class='btn btn-warning'>Buy</a>" : "")
+                                       
+                    ">                  
+                    
+                        @if (Model.ElementAt(count - 1).IsOccupied == true)
+                        {
+                            <div class="hexagon-part top occupied"></div>
+                            <div class="hexagon-part middle occupied"></div>
+                            <div class="hexagon-part bottom occupied"></div>
+                        }
+                        else if (User.Identity.IsAuthenticated && User.Identity.Name == Model.ElementAt(count - 1)?.User?.UserName)
+                        {
+                            <div class="hexagon-part top occupied-by-me"></div>
+                            <div class="hexagon-part middle occupied-by-me"></div>
+                            <div class="hexagon-part bottom occupied-by-me"></div>
+                        }
+                        else
+                        {
+                            <div class="hexagon-part top"></div>
+                            <div class="hexagon-part middle"></div>
+                            <div class="hexagon-part bottom"></div>
+                        }
+                    </a>
+                </div>
+                count++;
+            }
+        </div>
     
-    <div class="hex-row">
-        @for (int j = 0; j < 23; j++)
-        {
-            <div class="hex">
-                <a href="#" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="top" data-placement="top" title="Popover Header"
-                 data-bs-content="X = @Model.FirstOrDefault(x => x.Id == count).X, Y = @Model.FirstOrDefault(x => x.Id == count).Y">
-                    <div class="top"></div>
-                    <div class="middle"></div>
-                    <div class="bottom"></div>
-                </a>
-            </div>
-            count++;
-        }
-    </div>
-    <div class="hex-row even">
-        @for (int j = 0; j < 23; j++)
-        {
-            <div class="hex">
-                <a href="#" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="top" data-placement="top" title="Popover Header"
-                 data-bs-content="X = @Model.FirstOrDefault(x => x.Id == count).X, Y = @Model.FirstOrDefault(x => x.Id == count).Y">
-                    <div class="top"></div>
-                    <div class="middle"></div>
-                    <div class="bottom"></div>
-                </a>
-            </div>
-            count++;
-        }
-    </div>
 }
