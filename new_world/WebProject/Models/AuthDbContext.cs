@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace WebProject.Models
 {
-    public class AuthDbContext : IdentityDbContext
+    public class AuthDbContext : IdentityDbContext<AppUser>
     {
         public AuthDbContext(DbContextOptions<AuthDbContext> options) : base(options)
         {        }

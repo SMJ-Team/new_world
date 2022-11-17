@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Web_projects\\new_world\\new_world\\WebProject\\WebProject.csproj": {}
+    "D:\\Web development\\Git projects\\new_world\\new_world\\WebProject\\WebProject.csproj": {}
   },
   "projects": {
-    "D:\\Web_projects\\new_world\\new_world\\WebProject\\WebProject.csproj": {
+    "D:\\Web development\\Git projects\\new_world\\new_world\\WebProject\\WebProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Web_projects\\new_world\\new_world\\WebProject\\WebProject.csproj",
+        "projectUniqueName": "D:\\Web development\\Git projects\\new_world\\new_world\\WebProject\\WebProject.csproj",
         "projectName": "WebProject",
-        "projectPath": "D:\\Web_projects\\new_world\\new_world\\WebProject\\WebProject.csproj",
-        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "D:\\Web_projects\\new_world\\new_world\\WebProject\\obj\\",
+        "projectPath": "D:\\Web development\\Git projects\\new_world\\new_world\\WebProject\\WebProject.csproj",
+        "packagesPath": "C:\\Users\\Samurai\\.nuget\\packages\\",
+        "outputPath": "D:\\Web development\\Git projects\\new_world\\new_world\\WebProject\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Samurai\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -86,7 +86,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

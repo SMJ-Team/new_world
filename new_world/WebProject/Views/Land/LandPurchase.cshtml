@@ -1,0 +1,250 @@
+﻿@using System.Security.Claims;
+@using WebProject.Models.ViewModels;
+
+@{
+    Layout = "";
+}
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <title>WaxVing - Land purchase</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="~/Jaroslav/https://fonts.googleapis.com/css?family=Rubik:300,400,700|Oswald:400,700" rel="stylesheet">
+    <link rel="icon" href="~/Jaroslav/foto/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="~/Jaroslav/fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="~/Jaroslav/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/Jaroslav/css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="~/Jaroslav/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="~/Jaroslav/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="~/Jaroslav/fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" href="~/Jaroslav/css/aos.css">
+
+    <link rel="stylesheet" type="text/css" href="~/Jaroslav/styles/bootstrap4/bootstrap.min.css">
+<link href="~/Jaroslav/plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="~/Jaroslav/styles/cart.css">
+<link rel="stylesheet" type="text/css" href="~/Jaroslav/styles/cart_responsive.css">
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="~/Jaroslav/css/style.css">
+
+  </head>
+
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300" >
+
+    <div id="overlayer"></div>
+    <div class="loader">
+      <div class="spinner-border text-primary" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
+
+    <div class="site-wrap" id="home-section">
+
+      <div class="site-mobile-menu site-navbar-target">
+        <div class="site-mobile-menu-header">
+          <div class="site-mobile-menu-close mt-3">
+            <span class="icon-close2 js-menu-toggle"></span>
+          </div>
+        </div>
+        <div class="site-mobile-menu-body"></div>
+      </div>
+
+
+
+
+      <header class="site-navbar js-sticky-header site-navbar-target" role="banner" style="background: #F8FFEA;">
+
+        <div class="container-my">
+          <div class="row align-items-center position-relative">
+
+
+            <div class="site-logo">
+              <a href="~/Jaroslav/index.html" class="text-black">
+              <img src="~/Jaroslav/foto/logo.svg" style="height: 100px; margin-top: 13%; " />
+
+                <span class="text-primary">/
+                  <span style="color: black; ">WaxVing</span></span></a>
+
+            </div>
+
+            <div class="col-12">
+              <nav class="site-navigation text-right ml-auto " role="navigation" >
+
+                <ul class="site-menu main-menu js-clone-nav ml-auto d-none d-lg-block" >
+                  <li><a href="~/Jaroslav/index.html #home-section" class="nav-link underline-one">Home</a></li>
+                  <li><a href="~/Jaroslav/index.html #services-section" class="nav-link underline-one">Services</a></li>         
+                  <li><a href="~/Jaroslav/Land.html" class="nav-link underline-one">Land</a></li>
+                  <li><a href="~/Jaroslav/Store.html" class="nav-link underline-one">Store</a></li> <!-- END .ftco-cover-1 --><!-- END .ftco-cover-1 --><!-- END .ftco-cover-1 --><!-- END .ftco-cover-1 --><!-- END .ftco-cover-1 -->                
+                  <a class="btn btn btn-outline-danger" href="~/Jaroslav/login.html">Login </a>
+                </ul>
+              </nav>
+
+            </div>
+
+            <div class="toggle-button d-inline-block d-lg-none"><a href="~/Jaroslav/#" class="site-menu-toggle py-5 js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+
+          </div>
+        </div>
+
+      </header>
+
+
+<div >
+
+  <a href="~/Jaroslav/Land.html"><img src="~/Jaroslav/foto/imnaz.svg" class="img-fluid" alt="To return"  style="height: 30px;margin-top: 70px; margin-left: 250px;"></a></div>
+
+
+  <div class="blockz">
+
+    <div class="cart_info">
+        
+      <div class="container">
+        <div class="text-center" style="margin-bottom: 80px; color: black;"><h1>Making an order</h1></div>
+        <div class="row">            
+          <div class="col">
+            <!-- Column Titles -->
+
+            <div class="cart_info_columns clearfix">
+              <div class="cart_info_col cart_info_col_product"><h4>Land plot</h4></div>
+              <div class="cart_info_col cart_info_col_price"><h4>Your money</h4></div>
+              <div class="cart_info_col cart_info_col_total"><h4>Price</h4></div>
+              <div class="cart_info_col cart_info_col_total"><h4>Remains</h4></div>
+            </div>
+          </div>
+        </div>
+        <div class="row cart_items_row">
+          <div class="col">
+
+            <!-- Cart Item -->
+            <div class="cart_item d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-start">
+              <!-- Name -->
+              <div class="cart_item_product d-flex flex-row align-items-center justify-content-start">
+                <div class="cart_item_image">
+                  <div><img src="~/Jaroslav/foto/shesti.svg" alt="" style="height: 170px;margin-top: 10px;margin-left: 20px;"></div>
+                </div>
+                <div class="cart_item_name_container">
+                  <div class="cart_item_name" style="font-size: 25px;color: black;">Registered land plot.</div>
+                  <div class="cart_item_edit"><a href="~/Jaroslav/#" >Area ID - #@ViewBag.AreaId  </a></div>
+                  <div class="cart_item_edit"><a href="~/Jaroslav/#">Land ID - #@ViewBag.LandId </a></div>
+                </div>
+              </div>
+
+              <!-- Price -->
+                                <div class="cart_item_price"><h4>@ViewBag.Money</h4> </div>
+              <!-- discount -->
+              <div class="cart_item_total"><h4>2500.00 Waxg</h4> </div>
+
+              <!-- Total -->
+              <div class="cart_item_total" style="margin-left: 50px;"><h4>@(ViewBag.Money - 2500) Waxg</h4></div>
+            </div>
+
+          </div>
+        </div>
+        <div class="row row_cart_buttons">
+          <div class="col">
+            <div class="cart_buttons d-flex flex-lg-row flex-column align-items-start justify-content-start">
+              <!-- Total --
+              <div class="button continue_shopping_button borrad"><a href="~/Jaroslav/Land.html">Continue exploring the map</a></div>
+               -- Total -->
+              <div class="cart_buttons_right ml-lg-auto">
+                <div class="button clear_cart_button borrad"><a href="~/Jaroslav/Nobuy.html">Clear cart</a></div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="row row_extra">
+          <div class="col-lg-4">
+
+
+
+            <!-- Coupon Code -->
+            <div class="coupon">
+              <div class="section_title">Coupon code</div>
+              <div class="section_subtitle">Enter your coupon code</div>
+              <div class="coupon_form_container">
+                
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 offset-lg-2 borrad">
+            <div class="cart_total ">
+              <div class="section_title">Cart total</div>
+              <div class="section_subtitle">Final info</div>
+              <div class="cart_total_container borrad">
+                <ul>
+                  <li class="d-flex flex-row align-items-center justify-content-start">
+                    <div class="cart_total_title">Subtotal</div>
+                    <div class="cart_total_value ml-auto">2600 Waxg</div>
+                  </li>
+                  <li class="d-flex flex-row align-items-center justify-content-start">
+                    <div class="cart_total_title">discount</div>
+                    <div class="cart_total_value ml-auto">95,12 Waxg</div>
+                  </li>
+                  <li class="d-flex flex-row align-items-center justify-content-start">
+                    <div class="cart_total_title">Coupon code</div>
+                    <div class="cart_total_value ml-auto"> 0 Waxg </div>
+                  <li class="d-flex flex-row align-items-center justify-content-start">
+                    <div class="cart_total_title" style="margin-top: 50px;"><h3>Total</h3></div>
+                    <div class="cart_total_value ml-auto" style="margin-top: 50px;"><h3>2504,88 Waxg</h3></div>
+                  </li>
+                </ul>
+              </div>
+              <form method="post">
+                  <input name="landId" value="@ViewBag.LandId" type="hidden"/>
+                  <input  type="submit" class="button checkout_button borrad" style="margin-top: 30px; color:#A6F78A; "/>
+                </form>            
+              </div>
+          </div>
+        </div>
+                    
+        <div class="text-center" style="color: black; font-size: 20px;">* it doesn't matter if there are no funds, click the top up button!</div>
+      </div>
+      
+    </div>
+    
+  </div>
+  
+
+
+    <footer class="site-footer">
+
+    </footer>
+
+    </div>
+
+    <script src="~/Jaroslav/js/jquery-3.3.1.min.js"></script>
+    <script src="~/Jaroslav/js/popper.min.js"></script>
+    <script src="~/Jaroslav/js/bootstrap.min.js"></script>
+    <script src="~/Jaroslav/js/owl.carousel.min.js"></script>
+    <script src="~/Jaroslav/js/jquery.sticky.js"></script>
+    <script src="~/Jaroslav/js/jquery.waypoints.min.js"></script>
+    <script src="~/Jaroslav/js/jquery.animateNumber.min.js"></script>
+    <script src="~/Jaroslav/js/jquery.fancybox.min.js"></script>
+    <script src="~/Jaroslav/js/jquery.easing.1.3.js"></script>
+    <script src="~/Jaroslav/js/aos.js"></script>
+
+    <script src="~/Jaroslav/js/main.js"></script>
+    <script src="~/Jaroslav/js/jquery-3.2.1.min.js"></script>
+<script src="~/Jaroslav/styles/bootstrap4/popper.js"></script>
+<script src="~/Jaroslav/styles/bootstrap4/bootstrap.min.js"></script>
+<script src="~/Jaroslav/plugins/greensock/TweenMax.min.js"></script>
+<script src="~/Jaroslav/plugins/greensock/TimelineMax.min.js"></script>
+<script src="~/Jaroslav/plugins/scrollmagic/ScrollMagic.min.js"></script>
+<script src="~/Jaroslav/plugins/greensock/animation.gsap.min.js"></script>
+<script src="~/Jaroslav/plugins/greensock/ScrollToPlugin.min.js"></script>
+<script src="~/Jaroslav/plugins/easing/easing.js"></script>
+<script src="~/Jaroslav/plugins/parallax-js-master/parallax.min.js"></script>
+<script src="~/Jaroslav/js/cart.js"></script>
+
+
+  </body>
+
+</html>

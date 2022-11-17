@@ -5,64 +5,73 @@ build_property.UsingMicrosoftNETSdkWeb = true
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
 build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = WebProject
 build_property.RootNamespace = WebProject
-build_property.ProjectDir = D:\Web_projects\new_world\new_world\WebProject\
+build_property.ProjectDir = D:\Web development\Git projects\new_world\new_world\WebProject\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = true
-build_property.MSBuildProjectDirectory = D:\Web_projects\new_world\new_world\WebProject
+build_property.MSBuildProjectDirectory = D:\Web development\Git projects\new_world\new_world\WebProject
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/Web_projects/new_world/new_world/WebProject/Views/Account/GoogleResponse.cshtml]
+[D:/Web development/Git projects/new_world/new_world/WebProject/Views/Account/GoogleResponse.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxHb29nbGVSZXNwb25zZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Web_projects/new_world/new_world/WebProject/Views/Account/Login.cshtml]
+[D:/Web development/Git projects/new_world/new_world/WebProject/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Web_projects/new_world/new_world/WebProject/Views/Account/Register.cshtml]
+[D:/Web development/Git projects/new_world/new_world/WebProject/Views/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Web_projects/new_world/new_world/WebProject/Views/Email/ConfirmEmail.cshtml]
+[D:/Web development/Git projects/new_world/new_world/WebProject/Views/Email/ConfirmEmail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1haWxcQ29uZmlybUVtYWlsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Web_projects/new_world/new_world/WebProject/Views/Email/Error.cshtml]
+[D:/Web development/Git projects/new_world/new_world/WebProject/Views/Email/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1haWxcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Web_projects/new_world/new_world/WebProject/Views/Home/Index.cshtml]
+[D:/Web development/Git projects/new_world/new_world/WebProject/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Web_projects/new_world/new_world/WebProject/Views/Home/Land.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMYW5kLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/Web_projects/new_world/new_world/WebProject/Views/Home/Privacy.cshtml]
+[D:/Web development/Git projects/new_world/new_world/WebProject/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Web_projects/new_world/new_world/WebProject/Views/Shared/Error.cshtml]
+[D:/Web development/Git projects/new_world/new_world/WebProject/Views/Land/AreaList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFuZFxBcmVhTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Web development/Git projects/new_world/new_world/WebProject/Views/Land/LandList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFuZFxMYW5kTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Web development/Git projects/new_world/new_world/WebProject/Views/Land/LandPurchase.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFuZFxMYW5kUHVyY2hhc2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Web development/Git projects/new_world/new_world/WebProject/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Web_projects/new_world/new_world/WebProject/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/Web development/Git projects/new_world/new_world/WebProject/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Web_projects/new_world/new_world/WebProject/Views/_ViewImports.cshtml]
+[D:/Web development/Git projects/new_world/new_world/WebProject/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Web_projects/new_world/new_world/WebProject/Views/_ViewStart.cshtml]
+[D:/Web development/Git projects/new_world/new_world/WebProject/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Web_projects/new_world/new_world/WebProject/Views/Shared/_Layout.cshtml]
+[D:/Web development/Git projects/new_world/new_world/WebProject/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-4e5l3nx6xo

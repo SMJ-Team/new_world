@@ -1,0 +1,7 @@
+﻿@model List<Area>
+
+    @for(int i = 1; i < Model.Count + 1; i++)
+    {
+        @Model.FirstOrDefault(x => x.ID == i).Name;
+        <a asp-action="LandList" asp-controller="Land" asp-route-AreaId="@i">123</a>
+    }

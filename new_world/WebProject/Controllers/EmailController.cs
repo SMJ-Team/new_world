@@ -1,13 +1,14 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using WebProject.Models;
 
 namespace WebProject.Controllers
 {
     public class EmailController : Controller
     {
-        public UserManager<IdentityUser> _userManager { get; set; }
-        public EmailController(UserManager<IdentityUser> userManager)
+        public UserManager<AppUser> _userManager { get; set; }
+        public EmailController(UserManager<AppUser> userManager)
         {
             _userManager = userManager;
         }

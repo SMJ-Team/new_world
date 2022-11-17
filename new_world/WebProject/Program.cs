@@ -14,19 +14,19 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 options.UseSqlServer(builder.Configuration.GetConnectionString("DbConnectionString")));
 builder.Services.AddDbContext<AuthDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("AuthConnectionString")));
-builder.Services.AddIdentity<IdentityUser, IdentityRole>(options =>
+builder.Services.AddIdentity<AppUser, IdentityRole>(options =>
 {
     options.SignIn.RequireConfirmedEmail = true;
 }).AddEntityFrameworkStores<AuthDbContext>()
 .AddDefaultTokenProviders();
 
 builder.Services.AddAuthentication()
-    .AddGoogle(googleOptions =>
+    /*.AddGoogle(googleOptions =>
     {
         googleOptions.ClientId = builder.Configuration["Authentication:Google:ClientId"];
         googleOptions.ClientSecret = builder.Configuration["Authentication:Google:ClientSecret"];
         googleOptions.SignInScheme = IdentityConstants.ExternalScheme;
-    });
+    })*/;
 
 var app = builder.Build();
 

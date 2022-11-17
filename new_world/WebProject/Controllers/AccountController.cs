@@ -11,9 +11,9 @@ namespace WebProject.Controllers
 {
     public class AccountController : Controller
     {
-        public UserManager<IdentityUser> _userManager { get; set; }
-        public SignInManager<IdentityUser> _signInManager { get; set; }
-        public AccountController(UserManager<IdentityUser> userManager, SignInManager<IdentityUser> signInManager)
+        public UserManager<AppUser> _userManager { get; set; }
+        public SignInManager<AppUser> _signInManager { get; set; }
+        public AccountController(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager)
         {
             _userManager = userManager;
             _signInManager = signInManager;
@@ -30,7 +30,7 @@ namespace WebProject.Controllers
         {
             if (ModelState.IsValid)
             {
-                IdentityUser user = new IdentityUser { Email = model.Email, UserName = model.Email };
+                AppUser user = new AppUser { Email = model.Email, UserName = model.Email };
                 var result = await _userManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
                 {
@@ -80,7 +80,7 @@ namespace WebProject.Controllers
                 }
                 else
                 {
-                    IdentityUser user = await _userManager.FindByEmailAsync(model.Email);
+                    AppUser user = await _userManager.FindByEmailAsync(model.Email);
                     bool emailStatus = await _userManager.IsEmailConfirmedAsync(user);
 
                     if (emailStatus == false)
@@ -123,14 +123,14 @@ namespace WebProject.Controllers
            // return RedirectToAction("Index", "Home");
             else
             {
-                IdentityUser user = new IdentityUser
+                AppUser user = new AppUser
                 {
                     Email = info.Principal.FindFirst(ClaimTypes.Email).Value,
-                    UserName = info.Principal.FindFirst(ClaimTypes.Email).Value,
+                    UserName = info.Principal.FindFirst(ClaimTypes.Name).Value,
                     EmailConfirmed = true                    
                 };
 
-                IdentityResult identResult = await _userManager.CreateAsync(user);
+                var identResult = await _userManager.CreateAsync(user);
                 if (identResult.Succeeded)
                 {
                     identResult = await _userManager.AddLoginAsync(user, info);
