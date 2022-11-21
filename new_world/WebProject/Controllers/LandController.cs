@@ -22,7 +22,7 @@ namespace WebProject.Controllers
             _dbContext = dbContext;
             _userManager = userManager;
         }
-
+        
         //Вывод охбластей
         public IActionResult AreaList()
         {

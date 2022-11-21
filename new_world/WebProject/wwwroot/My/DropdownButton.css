@@ -1,0 +1,7 @@
+﻿.btn-circle{
+    border-radius:50%;
+    background:url("../img/chik_chirik.svg") no-repeat;
+    border:none;
+    margin:0;
+}
+

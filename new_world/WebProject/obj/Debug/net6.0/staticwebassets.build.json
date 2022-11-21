@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "/x6OL6kMul1hUqGKNSajg3eBCE9ks2k54xFUr2AcJ5s=",
+  "Hash": "Gvk7BA5hFsI8vgw6d79uNMw7u9Q4c3X84WEjpQ8v6xE=",
   "Source": "WebProject",
   "BasePath": "_content/WebProject",
   "Mode": "Default",
@@ -3211,6 +3211,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Jaroslav\\scss\\style.scss"
+    },
+    {
+      "Identity": "D:\\Web development\\Git projects\\new_world\\new_world\\WebProject\\wwwroot\\Jaroslav\\style1.css",
+      "SourceId": "WebProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Web development\\Git projects\\new_world\\new_world\\WebProject\\wwwroot\\",
+      "BasePath": "_content/WebProject",
+      "RelativePath": "Jaroslav/style1.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Jaroslav\\style1.css"
     },
     {
       "Identity": "D:\\Web development\\Git projects\\new_world\\new_world\\WebProject\\wwwroot\\Jaroslav\\styles\\bootstrap4\\bootstrap.min.css",

@@ -733,6 +733,10 @@
       "PackagePath": "staticwebassets\\Jaroslav\\scss\\style.scss"
     },
     {
+      "Id": "D:\\Web development\\Git projects\\new_world\\new_world\\WebProject\\wwwroot\\Jaroslav\\style1.css",
+      "PackagePath": "staticwebassets\\Jaroslav\\style1.css"
+    },
+    {
       "Id": "D:\\Web development\\Git projects\\new_world\\new_world\\WebProject\\wwwroot\\Jaroslav\\styles\\bootstrap4\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\Jaroslav\\styles\\bootstrap4\\bootstrap.min.css"
     },
