@@ -2073,8 +2073,7 @@ img.small-rotate {
     position: relative;
     height: 60px;
     width: 200px;
-    margin-left: 20px;
-    padding-right: 240px;
+    margin-left: 20px;    
     font-size: 20px;
     color: #FFFFFF;
     display: flex;
@@ -2089,4 +2088,18 @@ img.small-rotate {
     margin-left: -14px;
     padding-right: 240px;
     align-items: center;
+}
+
+.qt2 {
+    max-width: 1600px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.qw2 {
+    padding-left: 50px;
+    color: #000000;
 }

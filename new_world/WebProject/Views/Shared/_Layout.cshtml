@@ -1,4 +1,14 @@
-﻿<!DOCTYPE html>
+﻿@using Microsoft.AspNetCore.Identity;
+@inject UserManager<AppUser> _userManager
+   
+    @{AppUser currentUser = new AppUser();
+    @if(User.Identity.IsAuthenticated)
+{
+    currentUser = await _userManager.FindByNameAsync(User.Identity.Name);
+}
+}
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <title>@ViewData["Title"] - WebProject</title>
@@ -94,14 +104,14 @@
 
                                             <div class="dropdown-menu dropdown-menu-right" style="background-color: #F8FFEA;">
 
-                                                <span class="q1">NickName</span>
+                                                <span class="q1">@User.Identity.Name</span>
                                             <form method="post" asp-controller="Account" asp-action="Logout">
-                                                <input type="button" class="btn btn btn-outline-danger" value="Logout" /><img src="~/img/qqq/exit.svg">
+                                                <input type="image" src="~/img/qqq/exit.svg"/>
                                             </form>
                                                 <hr class="dropdown-divider">
                                                 <div style="height: 60px; padding: 0px;">
                                                     <div class="q2" style="background-image: url('@Url.Content("~/img/qqq/101.svg")'); height: 54px;width: 54px;">
-                                                        <div class="q3"><span>130570.47 WaxW</span></div>
+                                                        <div class="q3"><span>@currentUser.Money WaxW</span></div>
                                                     </div>
 
                                                 </div>
@@ -121,10 +131,10 @@
                                                         <button class="dropdown-item" type="button">Language: English</button>
                                                     </a>
                                                 </div>
-                                                <div>
-                                                    <a href="#" class="q4">
+                                                <div class="">
+                                                    <a href="#" class="q4 a" style="background-color: transparent; display:flex;">
                                                         <img src="~/img/qqq/hexagon 1.svg">
-                                                        <button class="dropdown-item" type="button">Land list</button>
+                                                        <p>Land list</p>
                                                     </a>
                                                 </div>
 
