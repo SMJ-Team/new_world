@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "q8gtRZxafNu11H7zRm0XuproQC7t/RUKu+fQDg1fzBEX5NfDQ1obmBepXz5araHwlzQUelXWx6Zz9J042ELBmg==",
+  "dgSpecHash": "SwY3CdHRYHSkTj8zoZw4hEPv9KwPl+yXEAS07zHDgQKF2uD5ZtZL01FsD3jW7Ty9+6RqPzyxEMLVD3lcyX2W5Q==",
   "success": true,
   "projectFilePath": "D:\\Web development\\Git projects\\new_world\\new_world\\WebProject\\WebProject.csproj",
   "expectedPackageFiles": [
@@ -57,6 +57,7 @@
     "C:\\Users\\Samurai\\.nuget\\packages\\microsoft.win32.registry\\5.0.0\\microsoft.win32.registry.5.0.0.nupkg.sha512",
     "C:\\Users\\Samurai\\.nuget\\packages\\microsoft.win32.systemevents\\5.0.0\\microsoft.win32.systemevents.5.0.0.nupkg.sha512",
     "C:\\Users\\Samurai\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
+    "C:\\Users\\Samurai\\.nuget\\packages\\quartz\\3.5.0\\quartz.3.5.0.nupkg.sha512",
     "C:\\Users\\Samurai\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\Samurai\\.nuget\\packages\\system.codedom\\4.4.0\\system.codedom.4.4.0.nupkg.sha512",
     "C:\\Users\\Samurai\\.nuget\\packages\\system.collections.immutable\\5.0.0\\system.collections.immutable.5.0.0.nupkg.sha512",

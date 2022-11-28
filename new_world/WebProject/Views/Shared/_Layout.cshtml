@@ -9,7 +9,7 @@
     <link rel="icon" href="~/Jaroslav/foto/logo.svg" type="image/x-icon">
     <link rel="stylesheet" href="~/Jaroslav/fonts/icomoon/style.css">
 
-    
+
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/hexagons.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/WebProject.styles.css" asp-append-version="true" />
@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="~/Jaroslav/css/owl.theme.default.min.css">
     <link rel="stylesheet" href="~/Jaroslav/fonts/flaticon/font/flaticon.css">
     <link rel="stylesheet" href="~/Jaroslav/css/aos.css">
+    <link rel="stylesheet" href="~/Jaroslav/css/style.css">
 
     <link rel="stylesheet" type="text/css" href="~/Jaroslav/styles/bootstrap4/bootstrap.min.css">
     <link href="~/Jaroslav/plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -71,105 +72,130 @@
 
                             <ul class="site-menu main-menu js-clone-nav ml-auto d-none d-lg-block">
                                 <li class="nav-item">
-                                    <a class="nav-link underline-one" asp-area="" asp-controller="Home" asp-action="Index" asp-fragment="home-section">Home</a>                                    
+                                    <a class="nav-link underline-one" asp-area="" asp-controller="Home" asp-action="Index" asp-fragment="home-section">Home</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link underline-one" asp-area="" asp-controller="Home" asp-action="Index" asp-fragment="services-section">Services</a>
-                                 </li>
-                                 <li class="nav-item">
+                                </li>
+                                <li class="nav-item">
                                     <a class="nav-link underline-one" asp-area="" asp-controller="Land" asp-action="AreaList">Land</a>
-                                 </li>
+                                </li>
                                 <li class="nav-item">
                                     <a class="nav-link underline-one" asp-area="" asp-controller="" asp-action="">Store</a>
-                                </li>     
-                                
-                                    @if (User.Identity.IsAuthenticated)
-                                    {
-                                        
-                                        <li>
+                                </li>
+
+                                @if (User.Identity.IsAuthenticated)
+                                {
+                                    <li>
                                         <div class="btn-group">
-                                            <button type="button" class="btn-circle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                               <img src="~/img/chik_chirik.svg">
-                                            </button>
-                                            <div class="dropdown-menu dropdown-menu-right">
-                                                <button class="dropdown-item" type="button">Action</button>
-                                                <button class="dropdown-item" type="button">Another action</button>
-                                                <button class="dropdown-item" type="button">Something else here</button>
-                                                <div class="dropdown-divider"></div>
-                                                <a class="dropdown-item" href="#">
-                                                    <form method="post" asp-controller="Account" asp-action="Logout">
-                                                        <input type="submit" class="btn btn btn-outline-danger" value="Logout" />
-                                                    </form>
-                                                </a>
+                                            <button type="button" class="btn-circle btn btn-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <img src="~/img/qqq/ptichka with a cylinder.svg">
+                                            </button>                                          
+
+                                            <div class="dropdown-menu dropdown-menu-right" style="background-color: #F8FFEA;">
+
+                                                <span class="q1">NickName</span>
+                                            <form method="post" asp-controller="Account" asp-action="Logout">
+                                                <input type="button" class="btn btn btn-outline-danger" value="Logout" /><img src="~/img/qqq/exit.svg">
+                                            </form>
+                                                <hr class="dropdown-divider">
+                                                <div style="height: 60px; padding: 0px;">
+                                                    <div class="q2" style="background-image: url('@Url.Content("~/img/qqq/101.svg")'); height: 54px;width: 54px;">
+                                                        <div class="q3"><span>130570.47 WaxW</span></div>
+                                                    </div>
+
+                                                </div>
+
+                                                <hr class="dropdown-divider">
+                                                <div clas>
+                                                    <a href="#" class="q4 row">
+                                                        <div class="row">
+                                                        <div class="col-2 how-img"><img src="~/img/qqq/settings 1.svg"></div>
+                                                        <div class="col-10"><p class="float-left">Settings</p></div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div>
+                                                    <a href="#" class="q4">
+                                                        <img src="~/img/qqq/belgium_1.svg">
+                                                        <button class="dropdown-item" type="button">Language: English</button>
+                                                    </a>
+                                                </div>
+                                                <div>
+                                                    <a href="#" class="q4">
+                                                        <img src="~/img/qqq/hexagon 1.svg">
+                                                        <button class="dropdown-item" type="button">Land list</button>
+                                                    </a>
+                                                </div>
+
+                                                <div class="q5"><img src="~/img/qqq/Deposit & Withdraw.svg" style="margin-top: 25px;">   </div>
+
                                             </div>
                                         </div>
+                                    </li>
+                                }
+                                else
+                                {
+                                    <li><a class="btn btn btn-outline-light mx-2" asp-area="" asp-controller="Account" asp-action="Login">Login</a></li>
+                                    <li><a class="btn btn btn-outline-primary" asp-area="" asp-controller="Account" asp-action="Register">Registration</a></li>
+                                }
 
-
-                                      
-                                        </li>
-                                    }
-                                    else
-                                    {
-                                        <li><a class="btn btn btn-outline-light mx-2" asp-area="" asp-controller="Account" asp-action="Login">Login</a></li>
-                                        <li><a class="btn btn btn-outline-primary" asp-area="" asp-controller="Account" asp-action="Register">Registration</a></li>
-                                    }
-                                
                             </ul>
-                            
+
                         </nav>
                     </div>
                     <div class="toggle-button d-inline-block d-lg-none"><a href="~/Jaroslav/#" class="site-menu-toggle py-5 js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
                 </div>
             </div>
         </header>
-    
-    
+
+
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
 
-    <footer class="border-top footer text-muted ">
-        <div class="container">
-            &copy; 2022 - WebProject - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
-    </footer>
+        <footer class="border-top footer text-muted ">
+            <div class="container">
+                &copy; 2022 - WebProject - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            </div>
+        </footer>
 
-    <script src="~/Jaroslav/js/jquery-3.3.1.min.js"></script>
-    <script src="~/Jaroslav/js/popper.min.js"></script>
-    <script src="~/Jaroslav/js/bootstrap.min.js"></script>
-    <script src="~/Jaroslav/js/owl.carousel.min.js"></script>
-    <script src="~/Jaroslav/js/jquery.sticky.js"></script>
-    <script src="~/Jaroslav/js/jquery.waypoints.min.js"></script>
-    <script src="~/Jaroslav/js/jquery.animateNumber.min.js"></script>
-    <script src="~/Jaroslav/js/jquery.fancybox.min.js"></script>
-    <script src="~/Jaroslav/js/jquery.easing.1.3.js"></script>
-    <script src="~/Jaroslav/js/aos.js"></script>
+        <script src="~/Jaroslav/js/jquery-3.3.1.min.js"></script>
+        <script src="~/Jaroslav/js/popper.min.js"></script>
+        <script src="~/Jaroslav/js/bootstrap.min.js"></script>
+        <script src="~/Jaroslav/js/owl.carousel.min.js"></script>
+        <script src="~/Jaroslav/js/jquery.sticky.js"></script>
+        <script src="~/Jaroslav/js/jquery.waypoints.min.js"></script>
+        <script src="~/Jaroslav/js/jquery.animateNumber.min.js"></script>
+        <script src="~/Jaroslav/js/jquery.fancybox.min.js"></script>
+        <script src="~/Jaroslav/js/jquery.easing.1.3.js"></script>
+        <script src="~/Jaroslav/js/aos.js"></script>
 
-    <script src="~/Jaroslav/js/main.js"></script>
-    <script src="~/Jaroslav/js/jquery-3.2.1.min.js"></script>
-    <script src="~/Jaroslav/styles/bootstrap4/popper.js"></script>
-    <script src="~/Jaroslav/styles/bootstrap4/bootstrap.min.js"></script>
-    <script src="~/Jaroslav/plugins/greensock/TweenMax.min.js"></script>
-    <script src="~/Jaroslav/plugins/greensock/TimelineMax.min.js"></script>
-    <script src="~/Jaroslav/plugins/scrollmagic/ScrollMagic.min.js"></script>
-    <script src="~/Jaroslav/plugins/greensock/animation.gsap.min.js"></script>
-    <script src="~/Jaroslav/plugins/greensock/ScrollToPlugin.min.js"></script>
-    <script src="~/Jaroslav/plugins/easing/easing.js"></script>
-    <script src="~/Jaroslav/plugins/parallax-js-master/parallax.min.js"></script>
-    <script src="~/Jaroslav/js/cart.js"></script>
+        <script src="~/Jaroslav/js/main.js"></script>
+        <script src="~/Jaroslav/js/jquery-3.2.1.min.js"></script>
+        <script src="~/Jaroslav/styles/bootstrap4/popper.js"></script>
+        <script src="~/Jaroslav/styles/bootstrap4/bootstrap.min.js"></script>
+        <script src="~/Jaroslav/plugins/greensock/TweenMax.min.js"></script>
+        <script src="~/Jaroslav/plugins/greensock/TimelineMax.min.js"></script>
+        <script src="~/Jaroslav/plugins/scrollmagic/ScrollMagic.min.js"></script>
+        <script src="~/Jaroslav/plugins/greensock/animation.gsap.min.js"></script>
+        <script src="~/Jaroslav/plugins/greensock/ScrollToPlugin.min.js"></script>
+        <script src="~/Jaroslav/plugins/easing/easing.js"></script>
+        <script src="~/Jaroslav/plugins/parallax-js-master/parallax.min.js"></script>
+        <script src="~/Jaroslav/js/cart.js"></script>
 
         <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.js"></script>
         <script src="~/js/site.js" asp-append-version="true"></script>
 
-    
-    <script>
-        var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
-        var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
-            return new bootstrap.Popover(popoverTriggerEl, {html:true})
-        })
-            
-    </script>
-    
-    @await RenderSectionAsync("Scripts", required: false)
+
+        <script>
+            var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+            var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+                return new bootstrap.Popover(popoverTriggerEl, { html: true })
+            })
+
+        </script>
+
+        @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

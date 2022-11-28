@@ -20,6 +20,11 @@ namespace WebProject.Controllers
             return View();
         }
 
+        public IActionResult Primer()
+        {
+            return View();
+        }
+
         public IActionResult Privacy()
         {
             return View();

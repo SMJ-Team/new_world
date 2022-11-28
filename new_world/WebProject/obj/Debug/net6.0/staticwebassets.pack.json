@@ -757,6 +757,10 @@
       "PackagePath": "staticwebassets\\Jaroslav\\styles\\cart_responsive.css"
     },
     {
+      "Id": "D:\\Web development\\Git projects\\new_world\\new_world\\WebProject\\wwwroot\\My\\DropdownButton.css",
+      "PackagePath": "staticwebassets\\My\\DropdownButton.css"
+    },
+    {
       "Id": "D:\\Web development\\Git projects\\new_world\\new_world\\WebProject\\wwwroot\\css\\hexagons.css",
       "PackagePath": "staticwebassets\\css\\hexagons.css"
     },
@@ -771,6 +775,10 @@
     {
       "Id": "D:\\Web development\\Git projects\\new_world\\new_world\\WebProject\\wwwroot\\img\\Frame.png",
       "PackagePath": "staticwebassets\\img\\Frame.png"
+    },
+    {
+      "Id": "D:\\Web development\\Git projects\\new_world\\new_world\\WebProject\\wwwroot\\img\\chik_chirik.svg",
+      "PackagePath": "staticwebassets\\img\\chik_chirik.svg"
     },
     {
       "Id": "D:\\Web development\\Git projects\\new_world\\new_world\\WebProject\\wwwroot\\js\\site.js",

@@ -1,0 +1,8 @@
+D:\Web development\Git projects\new_world\new_world\NewWorldService\bin\Debug\NewWorldService.exe.config
+D:\Web development\Git projects\new_world\new_world\NewWorldService\bin\Debug\NewWorldService.exe
+D:\Web development\Git projects\new_world\new_world\NewWorldService\bin\Debug\NewWorldService.pdb
+D:\Web development\Git projects\new_world\new_world\NewWorldService\obj\Debug\NewWorldService.csproj.AssemblyReference.cache
+D:\Web development\Git projects\new_world\new_world\NewWorldService\obj\Debug\NewWorldService.csproj.SuggestedBindingRedirects.cache
+D:\Web development\Git projects\new_world\new_world\NewWorldService\obj\Debug\NewWorldService.csproj.CoreCompileInputs.cache
+D:\Web development\Git projects\new_world\new_world\NewWorldService\obj\Debug\NewWorldService.exe
+D:\Web development\Git projects\new_world\new_world\NewWorldService\obj\Debug\NewWorldService.pdb

@@ -799,3 +799,4 @@ D:\Web development\Git projects\new_world\new_world\WebProject\obj\Debug\net6.0\
 D:\Web development\Git projects\new_world\new_world\WebProject\obj\Debug\net6.0\WebProject.pdb
 D:\Web development\Git projects\new_world\new_world\WebProject\obj\Debug\net6.0\WebProject.genruntimeconfig.cache
 D:\Web development\Git projects\new_world\new_world\WebProject\obj\Debug\net6.0\ref\WebProject.dll
+D:\Web development\Git projects\new_world\new_world\WebProject\bin\Debug\net6.0\Quartz.dll

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Gvk7BA5hFsI8vgw6d79uNMw7u9Q4c3X84WEjpQ8v6xE=",
+  "Hash": "EmZiwomGqKY9v/4K36lshh4U85ZKUnS7ey6PyjJW1fk=",
   "Source": "WebProject",
   "BasePath": "_content/WebProject",
   "Mode": "Default",
@@ -100,6 +100,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "D:\\Web development\\Git projects\\new_world\\new_world\\WebProject\\wwwroot\\img\\chik_chirik.svg",
+      "SourceId": "WebProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Web development\\Git projects\\new_world\\new_world\\WebProject\\wwwroot\\",
+      "BasePath": "_content/WebProject",
+      "RelativePath": "img/chik_chirik.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\chik_chirik.svg"
     },
     {
       "Identity": "D:\\Web development\\Git projects\\new_world\\new_world\\WebProject\\wwwroot\\img\\Frame.png",
@@ -4333,6 +4350,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "D:\\Web development\\Git projects\\new_world\\new_world\\WebProject\\wwwroot\\My\\DropdownButton.css",
+      "SourceId": "WebProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Web development\\Git projects\\new_world\\new_world\\WebProject\\wwwroot\\",
+      "BasePath": "_content/WebProject",
+      "RelativePath": "My/DropdownButton.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\My\\DropdownButton.css"
     }
   ]
 }
