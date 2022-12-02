@@ -773,12 +773,128 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "D:\\Web development\\Git projects\\new_world\\new_world\\WebProject\\wwwroot\\img\\Frame.png",
-      "PackagePath": "staticwebassets\\img\\Frame.png"
+      "Id": "D:\\Web development\\Git projects\\new_world\\new_world\\WebProject\\wwwroot\\img\\_sh.svg",
+      "PackagePath": "staticwebassets\\img\\_sh.svg"
     },
     {
-      "Id": "D:\\Web development\\Git projects\\new_world\\new_world\\WebProject\\wwwroot\\img\\chik_chirik.svg",
-      "PackagePath": "staticwebassets\\img\\chik_chirik.svg"
+      "Id": "D:\\Web development\\Git projects\\new_world\\new_world\\WebProject\\wwwroot\\img\\bloki.svg",
+      "PackagePath": "staticwebassets\\img\\bloki.svg"
+    },
+    {
+      "Id": "D:\\Web development\\Git projects\\new_world\\new_world\\WebProject\\wwwroot\\img\\crane.svg",
+      "PackagePath": "staticwebassets\\img\\crane.svg"
+    },
+    {
+      "Id": "D:\\Web development\\Git projects\\new_world\\new_world\\WebProject\\wwwroot\\img\\imnaz.svg",
+      "PackagePath": "staticwebassets\\img\\imnaz.svg"
+    },
+    {
+      "Id": "D:\\Web development\\Git projects\\new_world\\new_world\\WebProject\\wwwroot\\img\\land.svg",
+      "PackagePath": "staticwebassets\\img\\land.svg"
+    },
+    {
+      "Id": "D:\\Web development\\Git projects\\new_world\\new_world\\WebProject\\wwwroot\\img\\logo.svg",
+      "PackagePath": "staticwebassets\\img\\logo.svg"
+    },
+    {
+      "Id": "D:\\Web development\\Git projects\\new_world\\new_world\\WebProject\\wwwroot\\img\\lotto.svg",
+      "PackagePath": "staticwebassets\\img\\lotto.svg"
+    },
+    {
+      "Id": "D:\\Web development\\Git projects\\new_world\\new_world\\WebProject\\wwwroot\\img\\ob\\ob1.svg",
+      "PackagePath": "staticwebassets\\img\\ob\\ob1.svg"
+    },
+    {
+      "Id": "D:\\Web development\\Git projects\\new_world\\new_world\\WebProject\\wwwroot\\img\\ob\\ob2.svg",
+      "PackagePath": "staticwebassets\\img\\ob\\ob2.svg"
+    },
+    {
+      "Id": "D:\\Web development\\Git projects\\new_world\\new_world\\WebProject\\wwwroot\\img\\ob\\obl.svg",
+      "PackagePath": "staticwebassets\\img\\ob\\obl.svg"
+    },
+    {
+      "Id": "D:\\Web development\\Git projects\\new_world\\new_world\\WebProject\\wwwroot\\img\\ob\\obzero.svg",
+      "PackagePath": "staticwebassets\\img\\ob\\obzero.svg"
+    },
+    {
+      "Id": "D:\\Web development\\Git projects\\new_world\\new_world\\WebProject\\wwwroot\\img\\qqq\\101.svg",
+      "PackagePath": "staticwebassets\\img\\qqq\\101.svg"
+    },
+    {
+      "Id": "D:\\Web development\\Git projects\\new_world\\new_world\\WebProject\\wwwroot\\img\\qqq\\1957.19 WaxW.svg",
+      "PackagePath": "staticwebassets\\img\\qqq\\1957.19 WaxW.svg"
+    },
+    {
+      "Id": "D:\\Web development\\Git projects\\new_world\\new_world\\WebProject\\wwwroot\\img\\qqq\\Deposit & Withdraw.svg",
+      "PackagePath": "staticwebassets\\img\\qqq\\Deposit & Withdraw.svg"
+    },
+    {
+      "Id": "D:\\Web development\\Git projects\\new_world\\new_world\\WebProject\\wwwroot\\img\\qqq\\Land list.svg",
+      "PackagePath": "staticwebassets\\img\\qqq\\Land list.svg"
+    },
+    {
+      "Id": "D:\\Web development\\Git projects\\new_world\\new_world\\WebProject\\wwwroot\\img\\qqq\\Language_ English.svg",
+      "PackagePath": "staticwebassets\\img\\qqq\\Language_ English.svg"
+    },
+    {
+      "Id": "D:\\Web development\\Git projects\\new_world\\new_world\\WebProject\\wwwroot\\img\\qqq\\Line 26.svg",
+      "PackagePath": "staticwebassets\\img\\qqq\\Line 26.svg"
+    },
+    {
+      "Id": "D:\\Web development\\Git projects\\new_world\\new_world\\WebProject\\wwwroot\\img\\qqq\\Line 27.svg",
+      "PackagePath": "staticwebassets\\img\\qqq\\Line 27.svg"
+    },
+    {
+      "Id": "D:\\Web development\\Git projects\\new_world\\new_world\\WebProject\\wwwroot\\img\\qqq\\NickName.svg",
+      "PackagePath": "staticwebassets\\img\\qqq\\NickName.svg"
+    },
+    {
+      "Id": "D:\\Web development\\Git projects\\new_world\\new_world\\WebProject\\wwwroot\\img\\qqq\\Rectangle 98.svg",
+      "PackagePath": "staticwebassets\\img\\qqq\\Rectangle 98.svg"
+    },
+    {
+      "Id": "D:\\Web development\\Git projects\\new_world\\new_world\\WebProject\\wwwroot\\img\\qqq\\Settings.svg",
+      "PackagePath": "staticwebassets\\img\\qqq\\Settings.svg"
+    },
+    {
+      "Id": "D:\\Web development\\Git projects\\new_world\\new_world\\WebProject\\wwwroot\\img\\qqq\\belgium_1.svg",
+      "PackagePath": "staticwebassets\\img\\qqq\\belgium_1.svg"
+    },
+    {
+      "Id": "D:\\Web development\\Git projects\\new_world\\new_world\\WebProject\\wwwroot\\img\\qqq\\exit.svg",
+      "PackagePath": "staticwebassets\\img\\qqq\\exit.svg"
+    },
+    {
+      "Id": "D:\\Web development\\Git projects\\new_world\\new_world\\WebProject\\wwwroot\\img\\qqq\\hexagon 1.svg",
+      "PackagePath": "staticwebassets\\img\\qqq\\hexagon 1.svg"
+    },
+    {
+      "Id": "D:\\Web development\\Git projects\\new_world\\new_world\\WebProject\\wwwroot\\img\\qqq\\ptichka with a cylinder.svg",
+      "PackagePath": "staticwebassets\\img\\qqq\\ptichka with a cylinder.svg"
+    },
+    {
+      "Id": "D:\\Web development\\Git projects\\new_world\\new_world\\WebProject\\wwwroot\\img\\qqq\\settings 1.svg",
+      "PackagePath": "staticwebassets\\img\\qqq\\settings 1.svg"
+    },
+    {
+      "Id": "D:\\Web development\\Git projects\\new_world\\new_world\\WebProject\\wwwroot\\img\\ru.svg",
+      "PackagePath": "staticwebassets\\img\\ru.svg"
+    },
+    {
+      "Id": "D:\\Web development\\Git projects\\new_world\\new_world\\WebProject\\wwwroot\\img\\shesti.svg",
+      "PackagePath": "staticwebassets\\img\\shesti.svg"
+    },
+    {
+      "Id": "D:\\Web development\\Git projects\\new_world\\new_world\\WebProject\\wwwroot\\img\\soon2.svg",
+      "PackagePath": "staticwebassets\\img\\soon2.svg"
+    },
+    {
+      "Id": "D:\\Web development\\Git projects\\new_world\\new_world\\WebProject\\wwwroot\\img\\store.svg",
+      "PackagePath": "staticwebassets\\img\\store.svg"
+    },
+    {
+      "Id": "D:\\Web development\\Git projects\\new_world\\new_world\\WebProject\\wwwroot\\img\\waxv.svg",
+      "PackagePath": "staticwebassets\\img\\waxv.svg"
     },
     {
       "Id": "D:\\Web development\\Git projects\\new_world\\new_world\\WebProject\\wwwroot\\js\\site.js",

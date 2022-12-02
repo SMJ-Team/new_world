@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using Microsoft.IdentityModel.Tokens;
 using System.Collections.Immutable;
 using System.Security.Claims;
 using WebProject.Extensions;
@@ -95,6 +96,15 @@ namespace WebProject.Controllers
 
             return Redirect($"/Land/LandList?AreaId={land.AreaId}"); 
            // AppUser user = _userManager.FindByIdAsync
+        }
+
+        [Authorize]
+        public async Task<IActionResult> UsersLand()
+        {
+            var lands = _dbContext.Lands.Where(x => x.UserId == User.GetUserId());
+            if (lands.IsNullOrEmpty())
+                return View(null);
+            return View(lands);
         }
     }
 }

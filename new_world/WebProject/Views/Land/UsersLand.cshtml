@@ -1,0 +1,64 @@
+﻿@model IEnumerable<Land>
+@{
+    int j = 0;
+    int i = 0;
+}
+
+<div class="container userLandFirstContainer">
+
+@while (j < Model.Count())
+{
+    <div class="userLandContainer">
+    @if(Model == null)
+    {
+        <text>You don't have any land!</text>
+        break;
+    
+    }
+
+        <p class="userLandText">
+            AreaId:
+            @Model.ElementAt(j).AreaId
+        </p>
+    <div class="userLandTable">
+    
+    <a class="" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>LandId</th>
+                    <th>userId</th>
+                    <th>Income</th>
+                </tr>
+            </thead>
+            @for (i = j; i < Model.Count(); i++)
+            {
+                  
+                <tr>
+                    <td>
+                        @Model.ElementAt(i).ID;
+                    </td>
+                    <td>
+                        @Model.ElementAt(i).UserId;
+                    </td>
+                    <td>
+                        1
+                    </td>
+                </tr>
+                if ((i < Model.Count() - 1) && (Model.ElementAt(i + 1).AreaId != Model.ElementAt(i).AreaId))
+                {
+
+                    break;
+                }
+            }
+            @{
+                j = i + 1;
+             }
+        </table>
+    </a>
+    </div>
+    </div>
+}
+    
+</div>
+

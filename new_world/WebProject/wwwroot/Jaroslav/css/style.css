@@ -2103,3 +2103,28 @@ img.small-rotate {
     padding-left: 50px;
     color: #000000;
 }
+
+.userLandTable {
+    background-color: #FAF6E9;
+    border-radius: 25px;
+    margin-bottom: 30px;
+}
+
+.userLandContainer {
+    background-color: white;
+    border-radius: 50px;
+    margin-bottom:30px;
+    padding:15px;
+}
+
+.userLandFirstContainer {
+    background-color: #C8E0C6;
+    padding: 20px;
+    border-radius:40px;
+    margin-top:10px;
+}
+
+.userLandText {
+    font-size: 36px;
+    color: #00023E;
+}
